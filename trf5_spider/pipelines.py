@@ -5,16 +5,8 @@
 
 
 # useful for handling different item types with a single interface
-# from itemadapter import ItemAdapter
-
-
-# class Trf5SpiderPipeline:
-#     def process_item(self, item, spider):
-#         return item
 
 import pymongo
-from scrapy import settings
-from scrapy.exceptions import DropItem
 
 
 class Trf5SpiderPipeline(object):
@@ -22,17 +14,9 @@ class Trf5SpiderPipeline(object):
 
        
         self.mongo_uri = mongo_uri
-        print('==============================================================')
         self.mongo_db = mongo_db        
         self.mongo_collection = mongo_collection
 
-        
-        # connection = pymongo.MongoClient(
-        #     settings['MONGODB_SERVER'],
-        #     settings['MONGODB_PORT']
-        # )
-        # db = connection[settings['MONGODB_DB']]
-        # self.collection = db[settings['MONGODB_COLLECTION']]
     @classmethod
     def from_crawler(cls, crawler):
         return cls(
