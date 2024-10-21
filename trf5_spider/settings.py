@@ -12,9 +12,9 @@ BOT_NAME = "trf5_spider"
 SPIDER_MODULES = ["trf5_spider.spiders"]
 NEWSPIDER_MODULE = "trf5_spider.spiders"
 
-MONGODB_URI = "mongodb+srv://andersinternational86:scrapingpassword@tutor-pymongo.xpg5v.mongodb.net/"
-MONGODB_DB = "scraping"
-MONGODB_COLLECTION = "processos"
+MONGODB_URI = ""
+MONGODB_DB = ""
+MONGODB_COLLECTION = ""
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
