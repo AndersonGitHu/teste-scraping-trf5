@@ -36,8 +36,8 @@ Aplicar a técnica de raspagem de dados (scraping) no ambiente web com o intuito
 - Instalar Mongodb
 - Colocar os dados de acesso ao Banco de Dados no arquivo settings.py
 - No terminal, colocar um dos tais comandos:
-    `scrapy crawl trf5_spider -a cnpj=(cnpj da empresa consultada)`
-    `scrapy crawl trf5_spider -a numero_processo=(número do processo da empresa consultada)` 
+   - `scrapy crawl trf5_spider -a cnpj=cnpj_da_empresa`
+	- `scrapy crawl trf5_spider -a numero_processo=número_do_processo` 
 - Visualizar dados dos processos por meio do Mongo Compass ou outra ferramenta similar  
 	
 

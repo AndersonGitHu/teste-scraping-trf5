@@ -23,8 +23,6 @@ class TRF5Spider(scrapy.Spider):
             r = re.compile(r'[\D ]')
             cnpj_limpo = r.sub('', self.cnpj)
             yield scrapy.Request(f'https://cp.trf5.jus.br/processo/cpf/porData/{cnpj_limpo}/0', callback=self.buscar_processo)
-    
-
 
         
     def extrair_processo(self, response, **kwargs):
